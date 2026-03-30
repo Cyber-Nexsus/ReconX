@@ -1,2 +1,13 @@
 # ReconX
- ---  # 🚀 কিভাবে রান করবে  ```bash pip install -r requirements.txt python reconx.py
+# ReconX - Simple Recon Tool
+
+## Features
+- IP Resolve
+- HTTP Status Check
+- Port Scan
+- Subdomain Discovery
+
+## Usage
+
+```bash
+python reconx.py
