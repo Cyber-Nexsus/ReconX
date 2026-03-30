@@ -12,34 +12,34 @@
 ```bash
 python reconx.py
 
-In Kali Linux, if you attempt to run the command python reconx.py and Python is not installed, the terminal will return an error stating: "command not found: python". [1] 
-However, since you are using Kali Linux (which is a Debian-based distribution), it is highly likely that Python 3 is already installed by default, but the system might not recognize the shortened command python. [2, 3] 
+In Kali Linux, if you attempt to run the command python reconx.py and Python is not installed, the terminal will return an error stating: "command not found: python"
+However, since you are using Kali Linux (which is a Debian-based distribution), it is highly likely that Python 3 is already installed by default, but the system might not recognize the shortened command python. 
 1. Check for Python 3
-Modern Kali Linux versions (since 2020) have phased out Python 2. Try running the script using the explicit python3 command: [4] 
+Modern Kali Linux versions (since 2020) have phased out Python 2. Try running the script using the explicit python3 command: 
 
 python3 reconx.py
 
 2. Verify the Installation
-To confirm if Python is truly missing or just named differently, run these version checks: [1, 2] 
+To confirm if Python is truly missing or just named differently, run these version checks:
 
 * Check Python 3: python3 --version
-* Check Python 2: python --version (usually fails on newer Kali) [2] 
+* Check Python 2: python --version (usually fails on newer Kali) 
 
 3. How to Install Python
-If both commands fail and you have confirmed it is not installed, you can install it using the [APT package manager](https://www.kali.org/docs/general-use/python3-external-packages/): [3, 5, 6] 
+If both commands fail and you have confirmed it is not installed, you can install it using the [APT package manager](https://www.kali.org/docs/general-use/python3-external-packages/):
 
 sudo apt update
 sudo apt install python3
 
-4. Professional Tip for CEH (Executable Scripts) [7] 
-In a pentesting environment, you often want to run scripts directly like a tool. You can do this by adding a "shebang" line and changing permissions: [3, 8] 
+4. Professional Tip for CEH (Executable Scripts) 
+In a pentesting environment, you often want to run scripts directly like a tool. You can do this by adding a "shebang" line and changing permissions: 
 
    1. Add the shebang: Open reconx.py in an editor (like nano) and ensure the first line is:
    #!/usr/bin/env python3
    2. Make it executable:
    chmod +x reconx.py
    3. Run it directly:
-   ./reconx.py [7, 9] 
+   ./reconx.py 
 
 Are you getting a specific error message like "externally-managed-environment" when trying to install related libraries for your recon script?
 
